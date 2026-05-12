@@ -5,37 +5,20 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
 
-      - name: Create dist directory
-        run: mkdir -p dist
-
-      - name: Generate snake
-        uses: Platane/snk@master
+      - uses: Platane/snk@v3
         with:
           github_user_name: kanjyo-hirako
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Debug - check output
-        run: |
-          echo "=== workspace ==="
-          pwd
-          ls -la
-          echo "=== dist/ ==="
-          ls -la dist/ 2>&1 || echo "dist/ NOT FOUND"
-          echo "=== find svg ==="
-          find . -name "*.svg" 2>&1
-
-      - uses: crazy-max/ghaction-github-pages@v5
+      - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
