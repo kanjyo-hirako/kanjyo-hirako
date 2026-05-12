@@ -22,11 +22,3 @@
 
 <br>
 
----
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kanjyo-hirako&show_icons=true&theme=default&hide_border=true&rank_icon=github&show=reviews,prs_merged,prs_merged_percentage&count_private=true" height="170">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kanjyo-hirako&layout=compact&theme=default&hide_border=true" height="170">
-</p>
