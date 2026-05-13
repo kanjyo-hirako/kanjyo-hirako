@@ -12,7 +12,7 @@
 
 ---
 
-### 🐍 Contribution Snake
+### 🐍（我的蛇蛇要被饿死了QAQ） 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanjyo-hirako/kanjyo-hirako/output/github-contribution-grid-snake-dark.svg">
